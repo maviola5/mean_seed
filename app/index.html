@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="app">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>MEAN seed</title>
+        <meta name="description" content="A little seed to get you MEAN real quick.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="/">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="/lib/animate.css/animate.css">
+        <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+        <!-- endinject -->
+        <!-- inject:css -->
+        <link rel="stylesheet" href="/css/app.min.css">
+        <!-- endinject -->
+    </head>
+    <body>
+        <div class="f-frame">
+
+            <header class="header">
+                <div class="f-group">
+                    <div class="f-block">
+                        <div class="f-content">
+                            <h1>MEAN seed</h1>
+                        </div>
+                    </div>
+                    <div class="f-block">
+                        <div class="f-content">
+                            <nav class="nav" role="navigation">
+                                <ul class="nav__ul">
+                                    <li class="nav__li">
+                                        <a class="nav__a" href="/">Home</a>
+                                    </li>
+                                    <li class="nav__li">
+                                        <a class="nav__a" href="/about">About</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="main" ng-view></main>
+
+            <footer class="footer">
+                2016 &copy; Tony Viola
+            </footer>
+
+        </div>
+    <!-- bower:js -->
+    <script src="/lib/angular/angular.js"></script>
+    <script src="/lib/angular-route/angular-route.js"></script>
+    <script src="/lib/angular-animate/angular-animate.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="/js/app.min.js"></script>
+    <!-- endinject -->
+    </body>
+</html>
