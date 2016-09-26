@@ -14,9 +14,9 @@
 			controller: 'homeCtrl',
 			controllerAs: 'vm'
 		})
-		.when('/about', {
-			templateUrl: '/about/about.view.html',
-			controller: 'aboutCtrl',
+		.when('/docs', {
+			templateUrl: '/docs/docs.view.html',
+			controller: 'docsCtrl',
 			controllerAs: 'vm'
 		})
 		.otherwise({redirectTo: '/'});

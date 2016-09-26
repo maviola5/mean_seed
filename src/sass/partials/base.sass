@@ -1,0 +1,86 @@
+@import 'https://fonts.googleapis.com/css?family=Unica+One|Vollkorn';
+
+$family-heading: 'Unica One', cursive
+$family-body: 'Vollkorn', serif
+$font-size: 16px;
+$line-height: 16px * 1.25
+$gutter: $line-height / 2
+
+*
+	box-sizing: border-box
+html,body
+	min-height: 100vh
+	padding: 0
+	margin: 0
+.body 
+	font-family: $family-body
+	display: flex
+	flex-flow: column
+	padding: 0 $gutter
+	margin: auto;
+	max-width: 40em
+.header,.main,.footer
+.main 
+	flex: 1 0 auto
+.header,.footer
+	flex: 0 1 auto
+.header
+	display: flex
+	flex-flow: row wrap
+.footer
+	padding: $line-height*3 0 0 0
+h1,h2,h3,h4,h5,h6
+	font-family: $family-heading
+	margin: $line-height 0
+p
+	font-size: $font-size
+	line-height: $line-height
+	margin: $line-height 0
+a 
+	color: #c31
+	text-decoration: none
+a:hover
+	text-decoration: underline
+	color: #c31d
+.logo
+	flex: 0 0 100%
+	margin: $line-height 0
+	background-image: url('../img/mean-logo.svg')
+	background-repeat: no-repeat
+	background-size: 40px
+	background-position: 142px
+.nav
+	flex: 0 0 100%
+	margin: 0 
+	display: flex
+	align-items: center
+.nav__ul 
+	padding: 0
+	margin: 0
+	list-style: none
+	width: 100%
+.nav__a
+	font-family: $family-heading
+	padding: 10px
+	display: block
+	text-decoration: none
+	color: #c31
+	font-size: 18px
+.nav__a:hover 
+	background: #c31
+	color: #fff
+	text-decoration: none
+pre
+	background: #f7f7f7
+	padding: $line-height
+	word-break: break-all
+	white-space: normal
+@media screen and (min-width: 40em)
+	.logo
+		flex: 1 0 auto
+	.nav
+		flex: 2 0 auto
+		margin: $line-height 0
+	.nav__li
+		display: inline-block
+

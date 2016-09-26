@@ -26,7 +26,7 @@ gulp.task('bower', function(){
 gulp.task('sass', function(){
 	return gulp.src('./src/sass/app.sass')
 	.pipe(sourcemaps.init())
-	.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+	.pipe(sass({outputStyle: 'compressed', includePaths : ['./src/sass/partials']}).on('error', sass.logError))
 	.pipe(rename({suffix: '.min'}))
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest('./public/css'))
@@ -86,7 +86,7 @@ gulp.task('watch', function(){
 	livereload.listen();
 	gulp.watch('./src/sass/**/*.sass', ['sass']);
 	gulp.watch('./app/**/*.js', ['js']);
-	gulp.watch('./src/img', ['img']);
+	gulp.watch('./src/img/*', ['img']);
 	gulp.watch(['./app/*', './app/**/*'], ['view']);
 });
 
